@@ -18,7 +18,7 @@ function App() {
     console.log(user);
     fetch("http://localhost:5000/users", {
       method: "POST",
-      header: {
+      headers: {
         "content-type": "application/json",
       },
       body: JSON.stringify(user),
